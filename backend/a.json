@@ -1,0 +1,22 @@
+[
+{
+    "model": "Api.miners",
+    "pk": 1,
+    "fields": {
+        "megapodss": 1,
+        "serverpod_1s": 1,
+        "serverpod_2s": null,
+        "ip_addr": "1",
+        "temp_c_mean": null,
+        "temp_c_max": null,
+        "temp_p_max": null,
+        "total_rate": null,
+        "ghs_30m": null,
+        "ghs_5s": null,
+        "fan1": null,
+        "fan2": null,
+        "fan3": null,
+        "fan4": null
+    }
+}
+]

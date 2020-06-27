@@ -1,0 +1,122 @@
+{% load account %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet" />
+        <title>Email Verify</title>
+    </head>
+    <body style="padding:0 !important; margin:0 !important; display:block !important; min-width:100% !important; width:100% !important; background:#fff; -webkit-text-size-adjust:none;">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#fff">
+            <tr>
+                <td align="center" valign="top">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#f1f1f1">
+                        <tr>
+                            <td class="content-spacing" bgcolor="#f1f1f1" style="font-size:0pt; line-height:0pt; text-align:left;">&nbsp;</td>
+                            <td width="650" class="mobile-shell">
+                                <table width="650" border="0" cellspacing="0" cellpadding="0" class="mobile-shell">
+                                    <tr>
+                                        <td>
+                                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                <tr>
+                                                    <td bgcolor="#f1f1f1" style="padding: 30px;text-align: center; border-bottom: 4px solid #282871">
+                                                        <img src="http://iris-enegy.herokuapp.com/static/media/logo.f8918331.png" width="200" alt="">
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <table width="100%" border="0" cellspacing="0" cellpadding="0"  bgcolor="#ffffff">
+                                                <tr>
+                                                    
+                                                    <th class="column-dir"  width="30" style="font-size:0pt; line-height:0pt; padding:0; margin:0; font-weight:normal; border-top:4px solid #ffffff; "></th>
+                                                    <th class="column-dir"  width="550" style="font-size:0pt; line-height:0pt; padding:0; margin:0; font-weight:normal; border-top:4px solid #ffffff;">
+                                            
+                                                        <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+                                                            <tr>
+                                                                <td class="h3-2 yellow pb30" style="font-size:18px; line-height:34px; text-align:left; text-transform:capitalize; color:#191919; padding-bottom:20px;font-family:Helvetica;padding-top:30px"><multiline>Dear {% user_display user.first_name %}
+                                                                    <span>,</span></multiline></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <table width="100%" border="0" cellspacing="0" cellpadding="0" >
+                                                                        <tr>
+                                                                            <td valign="top">
+                                                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                                                    <tr>
+                                                                                        <td  style="color:#787777; font-family:Helvetica; font-size:16px; line-height:24px; text-align:left;padding-bottom:20px">
+                                                                                            <multiline style="display: block">
+                                                                                                Thanks for getting started with Iris Energy! We need a little more information to Complete your registration, including confirmation of your email address. Click below to confirm your email address
+                                                                                            </multiline>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td align="left" style="padding-top:0px; text-align: center;">
+                                                                                            <table width="220" border="0" cellspacing="0" cellpadding="0" style="margin: 0px auto">
+                                                                                                <tbody>
+                                                                                                    <tr>
+                                                                                                        <td class="text-button" style="color: #ffffff;font-family:'Helvetica';font-size:14px;line-height:16px;text-align:center;text-transform:uppercase;border: 2px solid #d86c15;background: #f27e21;">
+                                                                                                            <multiline>
+                                                                                                                <a href="{{ activate_url }}" align="center" target="_blank" class="link" style="color:#fff;text-decoration:none;height:40px;width:220px;vertical-align:middle;display: table-cell;">
+                                                                                                                    <span class="link" style="color:#fff; text-decoration:none;">Confirm your E-mail</span>
+                                                                                                                </a>
+                                                                                                            </multiline>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                </tbody>
+                                                                                            </table>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td  style="color:#787777; font-family:Helvetica; font-size:16px; line-height:24px; text-align:left;padding-top:30px">
+                                                                                            <multiline style="display: block">
+                                                                                                If you have problems, please paste the below URL into your web browser.
+                                                                                                <br/> <a href="{{ activate_url }}" target="_blank" style="color:#f27e21;">{{ activate_url }}</a>
+                                                                                            </multiline>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>                                                            
+                                                            <tr>
+                                                                <td align="left" style="color:#787777;padding-top:40px; font-family:Helvetica; font-size:16px;text-align:left;font-weight: 600;line-height: 20px">Thanks!</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="left" style="color:#787777; font-family:Helvetica;font-weight: 400; font-size:16px; line-height:24px;text-transform: capitalize;">Team Iris Energy</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td height="50"></td>
+                                                            </tr>
+                                                        </table>
+                                                    </th>
+                                                    <th class="column-dir"  width="30" style="font-size:0pt; line-height:0pt; padding:0; margin:0; font-weight:normal;  border-top:4px solid #ffffff;"></th>
+                                                </tr>
+                                            </table>
+                                            <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="">
+                                                <tr>
+                                                    <td height="10"></td>
+                                                </tr>                                            
+                                            </table>
+​
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#f1f1f1">
+                                    <tr>
+                                        <td class="text-footer p30-15" style="padding: 10px 10px 20px; color:#787777; font-family:Helvetica; font-size:14px; line-height:20px; text-align:center;">
+                                            <p style="margin: 0px; font-weight: 400;"><multiline>Iris Energy Australia</multiline></p>
+                                            <p style="margin: 0px;"><multiline>Level 22, Margaret Street, Sydney CBD, NSW 2000</multiline></p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td class="content-spacing" bgcolor="#f1f1f1" style="font-size:0pt; line-height:0pt; text-align:left;">&nbsp;</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

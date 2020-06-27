@@ -1,0 +1,461 @@
+.admin-entry-section{
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;	
+	background-image: url(../images/bg.png);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;	
+	font-family: 'Roboto', sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/*animation-name: dispalyblock;	
+	animation-duration: 1s;
+    animation-fill-mode: both;*/
+}
+
+/*@-webkit-keyframes dispalyblock {
+  0% {
+    display: none;
+  }
+
+  100% {
+   display: block;
+  }
+}*/
+
+.inner-admin{	
+	width: 900px;
+	border-radius: 6px;
+	overflow: hidden;
+	margin:0px auto;
+	display: block;
+}
+
+.logo{
+	max-width: 250px;
+}
+.inner-section{
+	background: rgba(255,255,255,1);
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: 8px 0px 0px 8px;
+}
+.form-section{
+	background: #282871;
+	padding: 30px;
+	border-radius: 8px;
+}
+.form-section h2{
+	font-size: 30px;
+	font-weight: 400;
+	text-align: center;
+	margin: 30px 0;
+	color: #fff;
+	/*font-style: italic;*/
+	/*text-transform: capitalize;*/
+	font-family: 'Roboto', sans-serif;
+	font-family: 'Ubuntu', sans-serif;	
+}
+.form-section .form-group label {
+    margin-bottom: 0px;
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-weight: 400;
+    line-height: 16px;
+}
+.form-section .form-control{
+	border-radius: 2px;
+	height: auto;
+	font-size: 14px;
+	font-weight: 400;
+	font-family: 'Roboto', sans-serif;
+	outline: none;
+	padding: 10px 15px;
+	box-shadow: none;
+	font-weight: 600;
+}
+.required-alert-box{
+	margin-bottom: 10px;
+	/* height: 80px; */
+}
+.required-alert-box span{
+    font-size: 13px;
+    text-shadow: none;
+    color: #ff1c1c !important;
+    font-weight: 600;
+    display: block;
+}
+.form-section a{
+	font-size: 14px;
+	font-weight: 400;
+	color: #f27e21;
+	text-decoration: none;
+}
+.form-section a:hover{
+	color:#fff;
+}
+.checkbox-custom{
+	position: relative;
+}
+.checkbox-custom input{
+	display: none;
+}
+.checkbox-custom label{
+	font-weight: 400 !important;
+	position: relative;
+	padding-left: 30px;
+	cursor: pointer;
+}
+.checkbox-custom label:after{
+	content: '';
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	border:2px solid #fff;
+	left: 0px;
+	top:0px;
+}
+.checkbox-custom label:before{
+	content: '\eed6';
+	font-family: IcoFont;
+	font-style: normal;
+	font-size: 21px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	line-height: 20px;
+	width: 20px;
+	color: #126086;
+	transform: scale(0);
+	transition: all .3s ease-in-out;
+	z-index: 1;
+}
+.checkbox-custom input:checked + label:after{
+	border-color: #ffffff;
+	background: #ffffff;
+	border-radius: 3px;
+}
+.checkbox-custom input:checked + label:before{
+	transform: scale(1);
+}
+.btn-green {
+    color: #fff;
+    background-color: #f27e21;
+    border-color: #f27e21;
+    font-size: 17px;
+    height: 44px;
+    letter-spacing: .5px;
+}
+.inner-section{
+	padding:30px;
+	position: relative;
+	overflow: hidden;
+}
+.inner-section *{
+	position: relative;
+	z-index: 1
+}
+.inner-section:after{
+	content: '';
+	width: 200px;
+	height: 200px;
+	border-radius: 100%;
+	background: rgba(18, 96, 134, 0.16);
+	position: absolute;
+	left: -30px;
+	bottom: -90px;
+}
+.register-section:after{
+	right: -30px;
+	left: auto;
+}
+.register-section{
+	border-radius: 0px 6px 6px 0px
+}
+.inner-section:before{
+	/*content: '';*/
+	width: 100px;
+	height: 100px;
+	/*background: rgba(18, 96, 134, 0.4);*/
+	background:rgba(131, 193, 50,.6);
+	position: absolute;
+	animation: animationFramesOne 10s infinite linear;
+}
+.inner-section p{
+	margin-bottom: 0px;
+	font-size: 16px;
+	font-family: 'Roboto', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
+	position: relative;
+	z-index: 1;
+	color: #282871;
+}
+.inner-section p a{
+	font-weight: 600;
+	color: #f27e21;
+}
+.inner-section h2{
+	font-size: 40px;
+	font-weight: 600;
+	color: #000000;
+	font-family: 'Ubuntu', sans-serif;
+	/*text-transform: capitalize;*/
+}
+.inner-section h4{
+	font-size: 20px;
+	font-weight: 400;
+	font-family: 'Ubuntu', sans-serif;
+	color: #7a7a7a;
+}
+
+
+.message-conntainer{
+	padding: 60px 0;
+}
+
+@-webkit-keyframes animationFramesOne {
+	 0% {
+    -webkit-transform: translate(0px, 0px) rotate(0deg);
+            transform: translate(0px, 0px) rotate(0deg);
+  }
+  20% {
+    -webkit-transform: translate(73px, -1px) rotate(36deg);
+            transform: translate(73px, -1px) rotate(36deg);
+  }
+  40% {
+    -webkit-transform: translate(141px, 72px) rotate(72deg);
+            transform: translate(141px, 72px) rotate(72deg);
+  }
+  60% {
+    -webkit-transform: translate(83px, 122px) rotate(108deg);
+            transform: translate(83px, 122px) rotate(108deg);
+  }
+  80% {
+    -webkit-transform: translate(-40px, 72px) rotate(144deg);
+            transform: translate(-40px, 72px) rotate(144deg);
+  }
+  100% {
+    -webkit-transform: translate(0px, 0px) rotate(0deg);
+            transform: translate(0px, 0px) rotate(0deg);
+  }
+}
+@keyframes animationFramesOne {
+  0% {
+    -webkit-transform: translate(0px, 0px) rotate(0deg);
+            transform: translate(0px, 0px) rotate(0deg);
+  }
+  20% {
+    -webkit-transform: translate(73px, -1px) rotate(36deg);
+            transform: translate(73px, -1px) rotate(36deg);
+  }
+  40% {
+    -webkit-transform: translate(141px, 72px) rotate(72deg);
+            transform: translate(141px, 72px) rotate(72deg);
+  }
+  60% {
+    -webkit-transform: translate(83px, 122px) rotate(108deg);
+            transform: translate(83px, 122px) rotate(108deg);
+  }
+  80% {
+    -webkit-transform: translate(-40px, 72px) rotate(144deg);
+            transform: translate(-40px, 72px) rotate(144deg);
+  }
+  100% {
+    -webkit-transform: translate(0px, 0px) rotate(0deg);
+            transform: translate(0px, 0px) rotate(0deg);
+  }
+}
+
+
+
+/**====== Demo 2 =====**/
+.form-image{
+	width: 100%;
+	height: 100%;
+	background: #a8e2ff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.form-image img{
+	max-width: 550px;
+}
+.body-container{
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;	
+	background-image: url(../images/bg.png);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;	
+	font-family: 'Roboto', sans-serif;	
+}
+.form-container{
+	height: 100vh;
+	width: 100%;
+	padding:15px 30px;
+	background: #fff;
+	overflow: hidden;
+}
+.inner-container-form{
+	max-width: 400px;
+	margin: 0px auto;
+}
+.form-container .logo{
+	width: 200px;
+}
+.form-container h2{
+	font-size: 27px;
+	margin-top: 15px;
+	font-weight: 600;
+	color: #126086;
+}
+.form-container a{
+	text-decoration: none;
+	color: #126086;
+	font-weight: 600;
+}
+.form-container h4{
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+.form-container .form-group label{
+	font-size: 14px;
+	margin-bottom: 0px;
+	color:#a5a0b1;
+	font-weight: 400;
+}
+.form-container .form-control{
+	box-shadow: none;
+	border-width: 2px;
+	font-size: 16px;
+	height: auto;
+	padding: 8px 15px;
+}
+.form-container .checkbox-custom{
+	position: relative;
+}
+.form-container .checkbox-custom input{
+	display: none;
+}
+.form-container .checkbox-custom label{
+	font-weight: 400 !important;
+	position: relative;
+	padding-left: 30px;
+	cursor: pointer;
+	color: #126086;
+	font-size: 16px;
+}
+.form-container .checkbox-custom label:after{
+	content: '';
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	border:2px solid #126086;
+	left: 0px;
+	top:0px;
+}
+.form-container .checkbox-custom label:before{
+	content: '\eed6';
+	font-family: IcoFont;
+	font-style: normal;
+	font-size: 21px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	line-height: 20px;
+	width: 20px;
+	color: #fff;
+	transform: scale(0);
+	transition: all .3s ease-in-out;
+	z-index: 1;
+}
+.form-container .checkbox-custom input:checked + label:after{
+	border-color: #126086;
+	background: #126086;
+	border-radius: 3px;
+}
+.form-container .checkbox-custom input:checked + label:before{
+	transform: scale(1);
+}
+.btn-blue{
+	    color: #fff;
+    background-color: #126086;
+    border-color: #126086;
+    font-size: 17px;
+    height: 44px;
+    letter-spacing: .5px;
+}
+
+
+/***=== Reset Password ===***/
+.forgot-screen .mCSB_container,
+.login-form-side .mCSB_container{
+	display: flex;
+	height: 100%;
+	width: 100%;
+	align-items: center;
+}
+
+.login-form-side .mCSB_container .inner-container-form,
+.forgot-screen .mCSB_container .inner-container-form{
+	width: 400px;
+}
+.forgot-screen .mCSB_container .inner-container-form h2{
+	margin-top: 40px;
+}
+.forgot-section{
+	background: #fff;
+}
+.forgot-section p,
+.forgot-section .form-group label{
+	color: #484848;
+}
+.forgot-section p a{
+	color: #282871;
+}
+.forgot-section h2{
+	color: #202020;
+}
+.forgot-section .form-group{
+	text-align: left;
+
+}
+.forgot-section p a{
+	font-weight: bold
+}
+.forgot-section p a:hover{
+	color: #f27e21;
+}
+
+.thanks-box .lead {
+    font-size: 31px;
+    margin: 30px 0;
+    font-weight: 500;
+    color: #484848;
+    text-shadow: 0px 2px 1px #2e2e2e;
+    word-spacing: 1px;
+}
+.reset-password-sent h3{
+	font-size: 18px;
+	font-weight: 400;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	color:#484848;
+}
+.reset-password-sent p{
+	font-size: 14px;
+}
+.forgot-section ul{
+	list-style: none;
+	padding:0px;
+}
+.forgot-section ul li{
+	margin-bottom: 3px;
+}
